@@ -1,0 +1,95 @@
+#container{
+    width: 90%;
+}
+#titleBar{
+    background-color: rgb(119, 194, 238);
+    color: white;
+}
+h1{
+    margin-right: 700px;
+}
+h2{
+    margin-right: 800px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style: none;
+    margin-right: 20px;
+}
+#temperatureSelector{
+    margin-left: 20px;
+    border: 4px solid black;
+}
+hr{
+    height: 5px;
+    width: 90%;
+    background-color: black;   
+    border-radius: 50%;
+}
+#weatherTablosRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    
+}
+.eachTablo{
+    background-color: rgb(243, 237, 237);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+    height: 400px;
+    width: 200px;
+}
+.weatherIcon{
+    height:150px;
+    border-radius: 50%;
+}
+.degrees{
+    display: inline-flex;
+    justify-content: space-between;
+    
+    font-weight: bolder;
+}
+.red{
+    display: flex;
+    align-self: flex-start;
+    margin-right: 100px;
+    color: red;
+}
+.blue{
+    display: flex;
+    align-self: flex-end;
+    /* text-align: end; */
+    color: blue;
+}
+#cookiesBox{
+    margin:20px 80px;
+    border: 4px solid black;
+    background-color: rgb(245, 240, 240);
+}
+#cookieImage{
+    height: 100px;
+    margin: 30px;
+}
+
+#stop{
+    font-size: 20px;
+    font-weight: bolder;
+}
+a{
+    color: rgb(50, 159, 223);
+}
+#acceptButton{
+    width: 150px;
+    height: 30px;
+    margin: 30px;
+    background-color: blue;
+    font-weight: bolder;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px black;
+}

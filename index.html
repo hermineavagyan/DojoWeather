@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>DojoWeather</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="titleBar" class="flex">
+            <h1>DojoWeather</h1>
+            <ul id="cityChoice" class="flex">
+                <li class="city">Burbank</li>
+                <li class="city">Chicago</li>
+                <li class="city">Dallas</li>
+            </ul>
+        </div>
+        <div class="flex">
+            <h2>San Jose</h2>
+            <div class="flex">
+                <p>show temperature in</p>
+                <select name="temperature" id="temperatureSelector" onchange="pickTemperature(this)">
+                    <option selected>Farenheit</option>
+                    <option>celsius</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="flex">
+            <div class="eachTablo">
+                <h3>Today</h3>
+                <img class="weatherIcon" src="assets/some_rain.png" alt="rainy day">
+                <p>some rain</p>
+                <div class="degrees">
+                    <p class="temperature red">75</p>
+                    <p class="temperature blue">65</p>
+                </div>
+
+            </div>
+            <div class="eachTablo">
+                <h3>Tomorrow</h3>
+                <img class="weatherIcon" src="assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="degrees">
+                    <p class="temperature red">80</p>
+                    <p class="temperature blue">66</p>
+                </div>
+
+            </div>
+            <div class="eachTablo">
+                <h3>Friday</h3>
+                <img class="weatherIcon" src="assets/some_clouds.png" alt="">
+                <p>some clouds</p>
+                <div class="degrees">
+                    <p class="temperature red">69</p>
+                    <p class="temperature blue">61</p>
+                </div>
+            </div>
+            <div class="eachTablo">
+                <h3>Saturday</h3>
+                <img class="weatherIcon" src="assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="degrees">
+                    <p class="temperature red">78</p>
+                    <p class="temperature blue">71</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="cookiesBox" class="flex">
+            <img id="cookieImage" src="assets/cookie.png" alt="cookie image">
+            <p id = "cookiesPolicy"><span id = "stop">Stop! Cookie time</span> We use cookies (sadly not the eadible ones) to presonalize content and
+                ads, to provide social media features and to analyze our traffic. <a href="#">Read more</a></p>
+            <button onclick="removeAccepteButton()" id="acceptButton">I Accept</button>
+        </div>
+    </div>
+</body>
+
+</html>
